@@ -33,9 +33,7 @@ fetch(nasaApiUrl)
   });
 
 function truncateDescription(text, numSentences) {
-  // Split the text into sentences
   const sentences = text.split('. ');
 
-  // Return the truncated description
   return sentences.slice(0, numSentences).join('. ') + '.';
 }
